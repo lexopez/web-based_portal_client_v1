@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>College of Business Administration - ESSU CAN-AVID</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <link href="assets/img/essu_logo.jpg" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/css/main.css" rel="stylesheet">
+</head>
+
+<body class="campus-facilities-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <h1><img src="assets/img/logo.png" alt=""></h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li class="dropdown"><a href="about.html"><span>About</span> <i
+                class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="admissions.html">Admissions</a></li>
+              <li><a href="academics.html">Academics</a></li>
+              <li><a href="faculty-staff.html">Faculty &amp; Staff</a></li>
+              <li><a href="campus-facilities.html" class="active">Campus &amp; Facilities</a></li>
+            </ul>
+          </li>
+
+          <li><a href="students-life.html">Students Life</a></li>
+          <li><a href="news.html">News & Announcements</a></li>
+
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="page-title dark-background" style="background-image: url(assets/img/background.png);">
+      <div class="container position-relative">
+        <h1>Campus &amp; Facilities</h1>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li class="current">Campus Facilities</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+    <section id="campus-facilities" class="campus-facilities section">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="intro-row">
+          <div class="row align-items-center">
+            <div class="col-lg-6" data-aos="fade-right" data-aos-delay="200">
+              <div class="intro-content">
+                <h2 class="fw-bold">Experience Our Campus</h2>
+                <p class="lead">Discover well‑equipped facilities at ESSU Can‑avid Campus, designed to support learning
+                  and community engagement.</p>
+                <p>Located on Barangay 10, Poblacion, Can‑avid, our campus offers educational, recreational, and support
+                  services for over 1,200 students.</p>
+                <div class="stats-container">
+                  <div class="stat-item">
+                    <span class="stat-number">10+</span>
+                    <span class="stat-label">Buildings</span>
+                  </div>
+                  <div class="stat-item">
+                    <span class="stat-number">1,200+</span>
+                    <span class="stat-label">Students</span>
+                  </div>
+                  <div class="stat-item">
+                    <span class="stat-number">6</span>
+                    <span class="stat-label">Key Facility Types</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6" data-aos="fade-left" data-aos-delay="300">
+              <div class="intro-image-container position-relative">
+                <!-- Images -->
+                <div class="intro-image main-image">
+                  <img src="assets/img/essu-canavid.jpg" alt="Main Campus" class="img-fluid rounded">
+                </div>
+                <div class="intro-image accent-image">
+                  <img src="assets/img/residential.jpg" alt="Campus Feature" class="img-fluid rounded">
+                </div>
+
+                <!-- Video (hidden by default) -->
+                <div class="video-wrapper" style="display:none; position:relative;">
+                  <video id="campusVideo" class="w-100 rounded" controls>
+                    <source src="assets/img/sample.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
+                  <!-- Close Button -->
+                  <button id="closeVideoBtn" class="btn btn-danger btn-sm position-absolute"
+                    style="top: 10px; right: 10px; border-radius: 50%; width: 32px; height: 32px; display: flex; align-items: center; justify-content: center;">
+                    &times;
+                  </button>
+                </div>
+
+                <!-- Tour Button -->
+                <div class="tour-button position-absolute" style="bottom: 15px; left: 15px;">
+                  <a href="#" id="playTourBtn" class="btn-tour btn btn-primary">
+                    <i class="bi bi-play-circle-fill"></i> Virtual Tour
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="facilities-tabs" data-aos="fade-up" data-aos-delay="200">
+          <ul class="nav nav-tabs" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="academic-tab" data-bs-toggle="tab"
+                data-bs-target="#campus-facilities-academic" type="button" role="tab">
+                <i class="bi bi-book"></i> Academic
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="athletic-tab" data-bs-toggle="tab"
+                data-bs-target="#campus-facilities-athletic" type="button" role="tab">
+                <i class="bi bi-trophy"></i> Athletic
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="residential-tab" data-bs-toggle="tab"
+                data-bs-target="#campus-facilities-residential" type="button" role="tab">
+                <i class="bi bi-house-door"></i> Support
+              </button>
+            </li>
+          </ul>
+
+          <div class="tab-content">
+            <div class="tab-pane fade show active" id="campus-facilities-academic" role="tabpanel">
+              <div class="row gy-4">
+                <div class="col-md-7" data-aos="fade-right" data-aos-delay="100">
+                  <div class="facility-highlight">
+                    <div class="facility-slider">
+                      <div class="facility-slide">
+                        <!-- <img src="assets/img/lib.png" alt="Library" class="img-fluid rounded"> -->
+                        <div class="slide-caption">Instructional Facilities</div>
+                      </div>
+                    </div>
+                    <div class="facility-description">
+                      <h3>Modern Academic Spaces</h3>
+                      <p>Includes well‑equipped classrooms, computer laboratories (via College of Computer Studies), and
+                        the learning resource center.</p>
+                      <ul class="feature-list">
+                        <li><i class="bi bi-check-circle-fill"></i> Business & Instructional Labs</li>
+                        <li><i class="bi bi-check-circle-fill"></i> Student Center with study areas</li>
+                        <li><i class="bi bi-check-circle-fill"></i> Health support station</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-5" data-aos="fade-left" data-aos-delay="200">
+                  <div class="facility-cards">
+                    <div class="facility-card">
+                      <div class="icon-container"><i class="bi bi-laptop"></i></div>
+                      <h4>Computer Studies Labs</h4>
+                      <p>Multiple labs supporting BSIT and ICS programs through the College of Computer Studies. </p>
+                      <span class="info-badge"><i class="bi bi-info-circle"></i> 3 main labs</span>
+                    </div>
+                    <div class="facility-card">
+                      <div class="icon-container"><i class="bi bi-people-fill"></i></div>
+                      <h4>Student Center</h4>
+                      <p>A multi-purpose hall for student gatherings, seminars, and other activities.</p>
+                      <span class="info-badge"><i class="bi bi-info-circle"></i> Central on-campus</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-pane fade" id="campus-facilities-athletic" role="tabpanel">
+              <div class="row gy-4">
+                <div class="col-md-7" data-aos="fade-right" data-aos-delay="100">
+                  <div class="facility-highlight">
+                    <div class="facility-description">
+                      <h3>Active Recreation Areas</h3>
+                      <p>The campus includes open-air courts and outdoor activity spaces that serve recreational and
+                        physical education needs.</p>
+                      <ul class="feature-list">
+                        <li><i class="bi bi-check-circle-fill"></i> Basketball/Ball courts</li>
+                        <li><i class="bi bi-check-circle-fill"></i> Outdoor fitness and activity areas</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-5" data-aos="fade-left" data-aos-delay="200">
+                  <div class="facility-cards">
+                    <div class="facility-card">
+                      <div class="icon-container"><i class="bi bi-stopwatch"></i></div>
+                      <h4>Open Courts</h4>
+                      <p>Outdoor courts for various sports and PE classes.</p>
+                      <span class="info-badge"><i class="bi bi-info-circle"></i> Available daily</span>
+                    </div>
+                    <div class="facility-card">
+                      <div class="icon-container"><i class="bi bi-heart-fill"></i></div>
+                      <h4>Health Support Station</h4>
+                      <p>Provides basic medical services during school hours. </p>
+                      <span class="info-badge"><i class="bi bi-info-circle"></i> On-site support</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-pane fade" id="campus-facilities-residential" role="tabpanel">
+              <div class="row gy-4">
+                <div class="col-md-7" data-aos="fade-right" data-aos-delay="100">
+                  <div class="facility-highlight">
+                    <div class="facility-slider">
+                      <div class="facility-slide">
+                        <img src="assets/img/residential.jpg" alt="Student Kiosk" class="img-fluid rounded">
+                        <div class="slide-caption">Student Kiosk & Business Center</div>
+                      </div>
+                    </div>
+                    <div class="facility-description">
+                      <h3>Student-Centered Support Services</h3>
+                      <p>On-campus student kiosk, business services, and gender & development office to support student
+                        needs.</p>
+                      <ul class="feature-list">
+                        <li><i class="bi bi-check-circle-fill"></i> Business Center for administrative services</li>
+                        <li><i class="bi bi-check-circle-fill"></i> Gender and Development office</li>
+                        <li><i class="bi bi-check-circle-fill"></i> Health kiosk & student support desk</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-5" data-aos="fade-left" data-aos-delay="200">
+                  <div class="facility-cards">
+                    <div class="facility-card">
+                      <div class="icon-container"><i class="bi bi-shop"></i></div>
+                      <h4>Business Center</h4>
+                      <p>Functions as student service hub—including enrollment & administrative transactions. </p>
+                      <span class="info-badge"><i class="bi bi-info-circle"></i> Central location</span>
+                    </div>
+                    <div class="facility-card">
+                      <div class="icon-container"><i class="bi bi-people"></i></div>
+                      <h4>Gender & Development Office</h4>
+                      <p>Supports campus gender sensitivity initiatives. </p>
+                      <span class="info-badge"><i class="bi bi-info-circle"></i> Advocacy & training</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="campus-map-section" data-aos="fade-up" data-aos-delay="200">
+            <div class="row align-items-center">
+              <div class="col-lg-5" data-aos="fade-right" data-aos-delay="100">
+                <div class="map-info">
+                  <h2>Campus Map</h2>
+                  <p>Navigate our expansive campus with ease using our interactive map. Locate buildings, facilities,
+                    and services to find your way around.</p>
+
+                </div>
+              </div>
+              <div class="col-lg-7" data-aos="fade-left" data-aos-delay="200">
+                <div class="map-container">
+                  <div class="ratio ratio-16x9">
+
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3902.6949064965!2d125.44130917490168!3d11.99560018823723!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3309130f0495af71%3A0x78fd50ec1e2ded7d!2sEastern%20Samar%20State%20University%20-%20Can-Avid%20Campus!5e0!3m2!1sen!2sph!4v1749392215361!5m2!1sen!2sph"
+                      width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                      referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+  </main>
+
+  <footer id="footer" class="footer position-relative dark-background">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span class="sitename">ESSU CAN-AVID</span>
+            <!-- <img src="assets/img/essu_logo.jpg" alt="" style="display: block;width: 100%;height: 100%;"> -->
+          </a>
+          <div class="footer-contact pt-3">
+            <p>Brgy. 10, Can-Avid Eastern Samar</p>
+            <p class="mt-3"><strong>Phone:</strong> <span>+63909234070</span></p>
+            <p><strong>Email:</strong> <span>info@example.com</span></p>
+          </div>
+          <div class="social-links d-flex mt-4">
+            <a href=""><i class="bi bi-twitter-x"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="admissions.html">Admissions</a></li>
+            <li><a href="academics.html">Academics</a></li>
+            <li><a href="faculty-staff.html">Faculty & Staff</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><a href="campus-facilities.html">Campus & Facilities</a></li>
+            <li><a href="students-life.html">Students Life</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="business-economics-major-details.html">Business Economics Major Details</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><a href="finacial-management-major-details.html">Financial Management Major Details</a></li>
+            <li><a href="human-resources-management-major-details.html">Human Resources Management Details</a></li>
+            <li><a href="marketing-management-major-details.html">Marketing Management Major Details</a></li>
+          </ul>
+        </div>
+
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">MyWebsite</strong> <span>All Rights Reserved</span></p>
+
+    </div>
+
+  </footer>
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+  <div id="preloader"></div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const playBtn = document.getElementById("playTourBtn");
+      const videoWrapper = document.querySelector(".video-wrapper");
+      const video = document.getElementById("campusVideo");
+      const closeBtn = document.getElementById("closeVideoBtn");
+      const images = document.querySelectorAll(".intro-image");
+      const tourButton = document.querySelector(".tour-button");
+
+      function showVideo() {
+        images.forEach(img => img.style.display = "none");
+        tourButton.style.display = "none";
+        videoWrapper.style.display = "block";
+        video.play();
+      }
+
+      function hideVideo() {
+        video.pause();
+        video.currentTime = 0;
+        videoWrapper.style.display = "none";
+        images.forEach(img => img.style.display = "block");
+        tourButton.style.display = "block";
+      }
+
+      playBtn.addEventListener("click", (e) => {
+        e.preventDefault();
+        showVideo();
+      });
+
+      closeBtn.addEventListener("click", hideVideo);
+
+      // When video ends
+      video.addEventListener("ended", hideVideo);
+    });
+  </script>
+
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

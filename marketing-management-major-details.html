@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>College of Business Administration - ESSU CAN-AVID</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <link href="assets/img/essu_logo.jpg" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/css/main.css" rel="stylesheet">
+</head>
+
+<body class="about-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <h1><img src="assets/img/logo.png" alt=""></h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li class="dropdown"><a href="about.html"><span>About</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="admissions.html">Admissions</a></li>
+              <li><a href="academics.html">Academics</a></li>
+              <li><a href="faculty-staff.html">Faculty &amp; Staff</a></li>
+              <li><a href="campus-facilities.html">Campus &amp; Facilities</a></li>
+            </ul>
+          </li>
+
+          <li><a href="students-life.html">Students Life</a></li>
+          <li><a href="news.html">News & Announcements</a></li>
+          
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="page-title dark-background" style="background-image: url(assets/img/background.png);">
+      <div class="container position-relative">
+        <h1>BSBA Major in Marketing Management</h1>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="programs.html">BSBA Programs</a></li>
+            <li class="current">Marketing Management</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+
+    <section id="program-overview" class="program section">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6">
+            <div class="program-content" data-aos="fade-up" data-aos-delay="200">
+              <h3>Program Overview</h3>
+              <h2>BSBA Major in Marketing Management</h2>
+              <p>
+                The BSBA Marketing Management major equips students with the knowledge and skills in marketing, advertising, 
+                sales, consumer behavior, product management, and strategic planning. 
+              </p>
+              <p>
+                It prepares graduates for careers in marketing, brand management, market research, advertising, and entrepreneurship, 
+                enabling them to thrive in highly competitive industries.
+              </p>
+            </div>
+            <ul class="program-details">
+              <li><i class="bi bi-clock"></i> 4 years</li>
+              <li><i class="bi bi-mortarboard-fill"></i> B.Sc. in Business Administration</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="container my-4 text-center">
+      <a href="index.html" class="btn btn-outline-primary rounded-pill px-4">
+        ← Back to BSBA Programs
+      </a>
+    </div>
+
+      <section id="news-posts" class="news-posts section"">
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Recent News</h2>
+          <p>Keep up to date with College of Business Administration's important news and announcements.</p>
+        </div>
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="row gy-4 d-flex justify-content-center" id="news-container">
+          </div>
+        </div>
+      </section>
+
+      <section id="pagination-2" class="pagination-2 section">
+        <div class="container">
+          <nav class="d-flex justify-content-center" aria-label="Page navigation">
+            <ul id="pagination" class="pagination"></ul>
+          </nav>
+        </div>
+      </section>
+
+      <div class="modal fade" id="newsModal" tabindex="-1" aria-labelledby="newsModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modalTitle">Announcement Title</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              
+              <!-- Carousel -->
+              <div id="modalCarousel" class="carousel slide mb-3" data-bs-ride="carousel">
+                <div class="carousel-inner" id="modalCarouselInner"></div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#modalCarousel" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#modalCarousel" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+
+              <p class="text-muted" id="modalDate"></p>
+              <p id="modalDescription"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+  </main>
+
+
+  <footer id="footer" class="footer position-relative dark-background">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center" >
+            <span class="sitename">ESSU CAN-AVID</span>
+          </a>
+          <div class="footer-contact pt-3">
+            <p>Brgy. 10, Can-Avid Eastern Samar</p>
+            <p class="mt-3"><strong>Phone:</strong> <span>+63909234070</span></p>
+            <p><strong>Email:</strong> <span>info@example.com</span></p>
+          </div>
+          <div class="social-links d-flex mt-4">
+            <a href=""><i class="bi bi-twitter-x"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="admissions.html">Admissions</a></li>
+            <li><a href="academics.html">Academics</a></li>
+            <li><a href="faculty-staff.html">Faculty & Staff</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><a href="campus-facilities.html">Campus & Facilities</a></li>
+            <li><a href="students-life.html">Students Life</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="business-economics-major-details.html">Business Economics Major Details</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><a href="finacial-management-major-details.html">Financial Management Major Details</a></li>
+            <li><a href="human-resources-management-major-details.html">Human Resources Management Details</a></li>
+            <li><a href="marketing-management-major-details.html">Marketing Management Major Details</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">MyWebsite</strong> <span>All Rights Reserved</span></p>
+
+    </div>
+
+  </footer>
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <div id="preloader"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script>
+    // ==== Supabase Config ====
+    const supabaseUrl = 'https://kpqqmdewmtbbdjykkrny.supabase.co'
+    const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImtwcXFtZGV3bXRiYmRqeWtrcm55Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTI5NjQ3NzEsImV4cCI6MjA2ODU0MDc3MX0.OAVzofMuM6ZdD6-r2c_IYT9ZE77SHlgTNVXKtwBZvl0'
+    const supabase = window.supabase.createClient(supabaseUrl, supabaseKey);
+
+    const currentMajor = "marketing management"; 
+
+    // ==== Pagination Config ====
+    const ITEMS_PER_PAGE = 6;
+    let currentPage = 1;
+    let totalPages = 1;
+
+    // ==== Fetch News ====
+    async function fetchNews(page = 1) {
+      const from = (page - 1) * ITEMS_PER_PAGE;
+      const to = from + ITEMS_PER_PAGE - 1;
+
+      const { count } = await supabase
+        .from("news&announcements")
+        .select("*", { count: "exact", head: true })
+        .eq("major", currentMajor)
+        .eq("archive", false); // filter archive=false
+
+
+      totalPages = Math.ceil(count / ITEMS_PER_PAGE);
+
+      const { data, error } = await supabase
+        .from('news&announcements')
+        .select('*')
+        .eq("archive", false)
+        .eq("major", currentMajor)
+        .order('date', { ascending: false })
+        .range(from, to);
+
+      if (error) {
+        console.error('Error fetching news:', error);
+        return;
+      }
+
+      renderNews(data);
+      renderPagination();
+    }
+
+    async function renderNews(newsItems) {
+    
+      const container = document.getElementById("news-container");
+      container.innerHTML = "";
+
+      if (newsItems.length === 0) {
+        container.innerHTML = '<p class="text-center">No news found.</p>';
+        return;
+      }
+
+      newsItems.forEach((post) => {
+        const imagesHtml = generateImageGrid(post);
+
+        const card = `
+          <div class="col-lg-2">
+            <div class="card shadow-sm border-0">
+              <div class="card-body d-flex flex-column">
+                <h5 class="fs-3">${post.title.split(" ").map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(" ")}</h5>
+                <small class="text-muted">${new Date(post.date).toDateString()}</small>
+                <p>
+                  ${
+                    post.description.length > 80
+                      ? post.description.substring(0, 80) +
+                        `<span class="fw-bold" style="cursor:pointer" onclick='openModal(${JSON.stringify(
+                          post
+                        )})'>...see more</span>`
+                      : post.description
+                  }
+                </p>
+                <div class="news-images mt-auto">${imagesHtml}</div>
+              </div>
+            </div>
+          </div>
+        `;
+        container.innerHTML += card;
+      });
+
+    }
+
+    // ==== Render Pagination ====
+    function renderPagination() {
+      const pagination = document.getElementById('pagination');
+      pagination.innerHTML = '';
+
+      if (totalPages == 0) return;
+
+      pagination.insertAdjacentHTML('beforeend', `
+        <li class="${currentPage === 1 ? 'disabled' : ''}">
+          <a href="#" data-page="${currentPage - 1}">
+            <i class="bi bi-arrow-left"></i>
+            <span class="d-none d-sm-inline">Previous</span>
+          </a>
+        </li>
+      `);
+
+      for (let i = 1; i <= totalPages; i++) {
+        pagination.insertAdjacentHTML('beforeend', `
+          <li>
+            <a href="#" class="${i === currentPage ? 'active' : ''}" data-page="${i}">${i}</a>
+          </li>
+        `);
+      }
+
+      pagination.insertAdjacentHTML('beforeend', `
+        <li class="${currentPage === totalPages ? 'disabled' : ''}">
+          <a href="#" data-page="${currentPage + 1}">
+            <span class="d-none d-sm-inline">Next</span>
+            <i class="bi bi-arrow-right"></i>
+          </a>
+        </li>
+      `);
+
+      document.querySelectorAll('#pagination a').forEach(link => {
+        link.addEventListener('click', (e) => {
+          e.preventDefault();
+          const page = parseInt(link.getAttribute('data-page'));
+          if (page >= 1 && page <= totalPages) {
+            currentPage = page;
+            fetchNews(currentPage);
+          }
+        });
+      });
+    }
+
+    // Generate a Facebook-style grid
+    function generateImageGrid(post) {
+      images = [];
+      images = post.image;
+
+      if (!images || images.length === 0) return "";
+
+      let html = "";
+      const fixedHeight = "250px"; // adjust as needed
+
+      if (images.length === 1) {
+        html = `
+          <div style="height:${fixedHeight}; overflow:hidden; cursor:pointer"onclick='openModal(${JSON.stringify(
+                  post
+                )})'>
+            <img src="${images[0]}" class="w-100 h-100 rounded" style="object-fit:cover;" />
+          </div>`;
+      } 
+      else if (images.length === 2) {
+        html = `
+          <div class="row g-1" style="height:${fixedHeight};cursor:pointer" onclick='openModal(${JSON.stringify(
+                  post
+                )})' >
+            <div class="col-6">
+              <div class="w-100 h-100">
+                <img src="${images[0]}" class="w-100 h-100 rounded" style="object-fit:cover;" />
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="w-100 h-100">
+                <img src="${images[1]}" class="w-100 h-100 rounded" style="object-fit:cover;" />
+              </div>
+            </div>
+          </div>`;
+      } 
+      else if (images.length === 3) {
+        html = `
+          <div class="row g-1" style="height:${fixedHeight};padding:0;">
+            <div class="col-6">
+              <div class="w-100" style="height:${fixedHeight}; cursor:pointer;" onclick='openModal(${JSON.stringify(
+                  post
+                )})' >
+                <img src="${images[0]}" class="w-100 h-100 rounded" style="object-fit:cover;" />
+              </div>
+            </div>
+            <div class="col-6 position-relative" style="cursor:pointer" onclick='openModal(${JSON.stringify(
+                  post
+                )})' >
+              <div class="w-100 h-100">
+                <img src="${images[1]}" class="w-100 h-100 rounded" style="object-fit:cover;" />
+              </div>
+              <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center text-white fw-bold">
+                <button class="btn fs-2" >+${images.length - 2}</button>
+              </div>
+            </div>
+          </div>`;
+      } 
+      else {
+        html = `
+          <div class="row g-1" style="height:${fixedHeight};padding:0;">
+            <div class="col-6">
+              <div class="w-100" style="height:${fixedHeight};cursor:pointer" onclick='openModal(${JSON.stringify(
+                  post
+                )})' >
+                <img src="${images[0]}" class="w-100 h-100 rounded" style="object-fit:cover;" />
+              </div>
+            </div>
+            <div class="col-6 position-relative" style="cursor:pointer" onclick='openModal(${JSON.stringify(
+                  post
+                )})' >
+              <div class="w-100 h-100">
+                <img src="${images[1]}" class="w-100 h-100 rounded" style="object-fit:cover;" />
+              </div>
+              <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center text-white fw-bold">
+                <button class="btn fs-2">+${images.length - 2}</button>
+              </div>
+            </div>
+          </div>`;
+      }
+
+      return html;
+    }
+
+
+    function openModal(post) {
+      document.getElementById("modalTitle").innerText = post.title;
+      document.getElementById("modalDate").innerText = new Date(post.date).toDateString();
+      document.getElementById("modalDescription").innerText = post.description;
+
+      const carouselContainer = document.getElementById('modalCarousel');
+      const prevBtn = carouselContainer.querySelector('.carousel-control-prev');
+      const nextBtn = carouselContainer.querySelector('.carousel-control-next');
+
+      const carouselInner = document.getElementById("modalCarouselInner");
+      carouselInner.innerHTML = "";
+
+      if (post.image && post.image.length > 0) {
+        post.image.forEach((img, index) => {
+          const activeClass = index === 0 ? "active" : "";
+          carouselInner.innerHTML += `
+            <div class="carousel-item ${activeClass}">
+              <img src="${img}" class="d-block w-100 rounded" style="max-height:400px;object-fit:cover;" alt="Announcement Image ${index+1}">
+            </div>
+          `;
+        });
+
+        // Hide/Show navigation based on number of images
+        if (post.image.length > 1) {
+          prevBtn.classList.remove('d-none');
+          nextBtn.classList.remove('d-none');
+        } else {
+          prevBtn.classList.add('d-none');
+          nextBtn.classList.add('d-none');
+        }
+      } else {
+        carouselInner.innerHTML = `
+          <div class="carousel-item active">
+            <img src="./assets/img/essu_logo.jpg" class="d-block w-100 rounded" style="max-height:400px;object-fit:cover;" alt="Default Image">
+          </div>
+        `;
+      }
+
+      const modal = new bootstrap.Modal(document.getElementById("newsModal"));
+      modal.show();
+    }
+
+    // ==== Init ====
+    fetchNews(currentPage);
+  </script>
+
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
